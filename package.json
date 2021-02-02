@@ -1,0 +1,20 @@
+{
+  "name": "test_double_ocr_kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "account_reader.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:debug": "node --inspect-brk --experimental-vm-modules node_modules/.bin/jest --runInBand",
+    "demo": "node account_reader.js test/data/scanned_numbers.txt"
+  },
+  "jest": {
+    "transform": {}
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
